@@ -37,9 +37,9 @@ fun FormIsian(
     Scaffold (modifier = Modifier,
         topBar = {
             TopAppBar(
-                title = { Text(text = stringResource(id = R.string.home), color = Color.White)},
+                title = { Text(text = stringResource(id = R.string.home), color = Color.Black)},
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = colorResource(id = R.color.black))
+                    containerColor = colorResource(id = R.color.birumuda))
                 )}
     ){ isiRuang ->
         Column(modifier = Modifier.padding(paddingValues = isiRuang),
@@ -56,7 +56,7 @@ fun FormIsian(
             )
             HorizontalDivider(modifier = Modifier
                 .padding(all = 20.dp)
-                .width(width = 250.dp), thickness = Thickness,color = Color.Blue)
+                .width(width = 250.dp), thickness = Thickness,color = Color.Black)
             Row {
                 jenisK.forEach {
                     item->
@@ -73,7 +73,7 @@ fun FormIsian(
                 .padding(all = 20.dp)
                 .width(width = 250.dp),
                 thickness = 1.dp,
-                color = Color.Green
+                color = Color.Black
             )
             OutlinedTextField(
                 value = "",
